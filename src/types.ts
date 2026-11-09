@@ -22,7 +22,7 @@ export interface Question {
   issues: string[];
   /** Original text the parser saw, shown next to the fix form. */
   raw?: string;
-  /** Pasted questions start unverified; answer keys from social media can be wrong. */
+  /** Pasted questions start unverified until you confirm the answer key. */
   verified: boolean;
   /** User reported the question as bad; it's left out of modules. */
   excluded?: boolean;

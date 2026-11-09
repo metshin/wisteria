@@ -49,8 +49,8 @@ function PasteImport({ go }: { go: Go }) {
         <p className="muted" style={{ marginTop: 0 }}>
           Paste one or more questions. Numbered (<code>1.</code>, <code>2.</code>) or separated by <code>---</code> works best.
           Each needs choices <b>A–D</b> and a line like <code>Answer: C</code>. <code>Explanation:</code>,{' '}
-          <code>Skill:</code> and <code>Difficulty:</code> lines are picked up too, but they're optional: a question from TikTok or
-          YouTube with just the question, four choices and the answer is enough.
+          <code>Skill:</code> and <code>Difficulty:</code> lines are picked up too, but they're optional: just the question, four
+          choices and the answer is enough.
         </p>
         <textarea value={text} rows={14} placeholder={'1. Passage text…\nWhich choice completes the text…?\nA) …\nB) …\nC) …\nD) …\nAnswer: B\nExplanation: …'}
           onChange={(e) => setText(e.target.value)} />
@@ -70,9 +70,6 @@ function PasteImport({ go }: { go: Go }) {
           <span className="spacer" />
           <button className="btn primary" disabled={!text.trim()} onClick={parse}>Read questions</button>
         </div>
-        <p className="muted small" style={{ marginBottom: 0 }}>
-          ⚠️ Answer keys from Reddit/TikTok are sometimes wrong. Pasted questions get an “unverified” badge until you tick “I checked this”.
-        </p>
       </div>
 
       {done && (

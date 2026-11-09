@@ -3,7 +3,7 @@ import { emptyDraft, findIssues, type Draft } from './validate';
 import { normalizeDifficulty, normalizeSkill } from './skills';
 
 /**
- * Forgiving parser for questions copied from Reddit, TikTok captions, notes apps etc.
+ * Forgiving parser for pasted questions (from notes, documents, etc.).
  * It never guesses silently: anything it can't find ends up in `issues` for the fix queue.
  */
 

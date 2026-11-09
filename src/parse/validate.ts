@@ -4,7 +4,7 @@ export type Draft = Omit<Question, 'id' | 'createdAt' | 'issues'>;
 
 /**
  * Everything that stops a question from being used in a module. Empty array = good to go.
- * Skill, difficulty and rationale are optional (questions from TikTok/YouTube often have none).
+ * Skill, difficulty and rationale are optional (pasted questions often have none).
  */
 export function findIssues(q: Draft): string[] {
   const issues: string[] = [];
