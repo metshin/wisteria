@@ -28,7 +28,6 @@ or by importing a PDF you downloaded for personal use. Please respect the copyri
 
 Your data is stored in your browser (IndexedDB). Clearing site data, or switching browser or device, starts you fresh.
 
-The live site uses Cloudflare Web Analytics to count visits anonymously (no cookies, no personal data). Your questions and progress never leave your browser.
 
 ## Run it locally
 
